@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>André | Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo">ANDRÉ<span>_</span></a>
+    <ul>
+        <li><a href="index.html" data-i18n="nav.home">home</a></li>
+        <li><a href="projects.html" class="active" data-i18n="nav.projects">projects</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">contact</a></li>
+    </ul>
+    <button class="lang-btn" onclick="toggleLang()">
+        <span class="flag" id="lang-flag">🇧🇷</span>
+        <span id="lang-label">PT</span>
+    </button>
+</nav>
+
+<main>
+    <!-- Project 1 Detailed -->
+    <section class="card card-project-full">
+        <div class="project-header">
+            <span class="project-icon">⚡</span>
+            <div class="project-meta">project_01 // 2024</div>
+        </div>
+        <h2 class="project-title-lg">Math Quiz Terminal of Doom</h2>
+        <div class="project-tags">
+            <span class="project-tag">C++</span>
+            <span class="project-tag">Win32 API</span>
+            <span class="project-tag">System Calls</span>
+            <span class="project-tag">Low-Level</span>
+        </div>
+        <div class="project-details" data-i18n="proj1.full_desc">
+            A high-stakes console quiz built in C++ using the Win32 API. The twist: if the user runs out of lives — calculated from the system's actual RAM — the computer reboots. No mercy.
+            <br><br>
+            <strong>Key Features:</strong>
+            <ul>
+                <li>Direct memory access via Win32 API.</li>
+                <li>Custom terminal rendering engine.</li>
+                <li>System-level integration for reboot commands.</li>
+            </ul>
+        </div>
+        <div class="project-links">
+            <a href="#" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="btn-link btn-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+        </div>
+    </section>
+
+    <!-- Project 2 Detailed -->
+    <section class="card card-project-full">
+        <div class="project-header">
+            <span class="project-icon">🧮</span>
+            <div class="project-meta">project_02 // 2024</div>
+        </div>
+        <h2 class="project-title-lg">Euclidean Algorithm WASM</h2>
+        <div class="project-tags">
+            <span class="project-tag">C++</span>
+            <span class="project-tag">WebAssembly</span>
+            <span class="project-tag">Emscripten</span>
+            <span class="project-tag">JavaScript</span>
+        </div>
+        <div class="project-details" data-i18n="proj2.full_desc">
+            Euclidean GCD algorithm compiled from C++ to WebAssembly via Emscripten. Native processing power delivered straight to the browser.
+            <br><br>
+            <strong>Key Features:</strong>
+            <ul>
+                <li>High-performance mathematical computations.</li>
+                <li>Seamless C++ to JS integration.</li>
+                <li>Optimized binary size for fast loading.</li>
+            </ul>
+        </div>
+        <div class="project-links">
+            <a href="#" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+    <!-- Project 3 Detailed -->
+    <section class="card card-project-full">
+        <div class="project-header">
+            <span class="project-icon">🌱</span>
+            <div class="project-meta">project_03 // 2024</div>
+        </div>
+        <h2 class="project-title-lg">Enactus UFRA</h2>
+        <div class="project-tags">
+            <span class="project-tag">IT Support</span>
+            <span class="project-tag">Infrastructure</span>
+            <span class="project-tag">Social Impact</span>
+        </div>
+        <div class="project-details" data-i18n="proj3.full_desc">
+            IT support for social impact solutions and tech education in the Amazon region.
+            <br><br>
+            <strong>Key Features:</strong>
+            <ul>
+                <li>Managing local server infrastructure.</li>
+                <li>Providing technical workshops for the community.</li>
+                <li>Developing internal tools for project management.</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2026 <span>André</span> · <span data-i18n="footer.text">Built with a C++ Mindset</span> · Ananindeua/PA
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
