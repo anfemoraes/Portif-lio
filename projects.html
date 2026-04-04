@@ -8,114 +8,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dashboard-layout">
 
-<!-- ── TOP NAV ── -->
-<nav>
-    <a href="index.html" class="logo">ANDRÉ<span>_</span></a>
-    <ul>
-        <li><a href="index.html"    data-i18n="nav.home">Home</a></li>
-        <li><a href="projects.html" class="active" data-i18n="nav.projects">Projetos</a></li>
-        <li><a href="index.html#contact" data-i18n="nav.contact">Contato</a></li>
-    </ul>
-    <button class="lang-btn" onclick="toggleLang()">
-        <span id="lang-flag">🇧🇷</span>
-        <span id="lang-label">PT</span>
-    </button>
-</nav>
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div class="avatar-container">
+                <img src="sua-foto.jpg" alt="André" class="profile-img" onerror="this.style.display='none'">
+                <i class="fas fa-user placeholder-icon"></i>
+            </div>
+            <h1 class="profile-name">André<span>_</span></h1>
+            <p class="profile-bio" data-i18n="hero.bio">Estudante de Ciência da Computação na <strong>UFRA</strong>. Entusiasta Microsoft e apaixonado por performance.</p>
+        </div>
+        <nav class="side-nav">
+            <a href="index.html" class="nav-item"><i class="fas fa-home"></i> <span data-i18n="nav.home">Home</span></a>
+            <a href="projects.html" class="nav-item active"><i class="fas fa-code"></i> <span data-i18n="nav.projects">Projetos</span></a>
+            <a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">Contato</span></a>
+        </nav>
+        <div class="sidebar-footer">
+            <button class="lang-btn-alt" onclick="toggleLang()">
+                <span id="lang-flag">🇧🇷</span> <span id="lang-label">PT</span>
+            </button>
+        </div>
+    </aside>
 
-<!-- ── PROJECTS ── -->
-<main>
+    <main class="main-content">
+        <p class="section-title">// repositórios & projetos</p>
+        <div class="grid-container">
+                <section class="card card-project-full">
+    <div class="project-header">
+        <div class="main-tech">
+            <i class="fab fa-cuttlefish"></i> <span>C++</span>
+        </div>
+        <div class="project-meta">project_01 // 2024</div>
+    </div>
+    
+    <h2 class="project-title-lg">Math Quiz Terminal of Doom</h2>
+    
+    <div class="project-tags">
+        <span class="project-tag">Win32 API</span>
+        <span class="project-tag">System Calls</span>
+        <span class="project-tag">Low-Level</span>
+    </div>
 
-    <!-- Project 01 -->
-    <section class="card card-project-full">
-        <div class="project-header">
-            <span class="project-icon">⚡</span>
-            <div class="project-meta">project_01 // 2024</div>
+    <div class="project-details" data-i18n="proj1.full_desc">
+        Um quiz matemático de console em C++ com Win32 API...
+    </div>
+</section>
+                
         </div>
-        <h2 class="project-title-lg">Math Quiz Terminal of Doom</h2>
-        <div class="project-tags">
-            <span class="project-tag">C++</span>
-            <span class="project-tag">Win32 API</span>
-            <span class="project-tag">System Calls</span>
-            <span class="project-tag">Low-Level</span>
-        </div>
-        <div class="project-details" data-i18n="proj1.full_desc">
-            Quiz de matemática no terminal construído em C++ com a Win32 API.
-            O diferencial: se o usuário perder todas as vidas — calculadas com base na RAM real do sistema — o computador reinicia. Sem piedade.
-            <br><br>
-            <strong>Destaques:</strong>
-            <ul>
-                <li>Acesso direto à memória via Win32 API.</li>
-                <li>Engine de renderização customizada no terminal.</li>
-                <li>Integração com comandos de reboot no nível do sistema.</li>
-            </ul>
-        </div>
-        <div class="project-links">
-            <a href="#" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
-            <a href="#" class="btn-link btn-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
-        </div>
-    </section>
+    </main>
 
-    <!-- Project 02 -->
-    <section class="card card-project-full">
-        <div class="project-header">
-            <span class="project-icon">🧮</span>
-            <div class="project-meta">project_02 // 2024</div>
-        </div>
-        <h2 class="project-title-lg">Euclidean Algorithm WASM</h2>
-        <div class="project-tags">
-            <span class="project-tag">C++</span>
-            <span class="project-tag">WebAssembly</span>
-            <span class="project-tag">Emscripten</span>
-            <span class="project-tag">JavaScript</span>
-        </div>
-        <div class="project-details" data-i18n="proj2.full_desc">
-            Algoritmo de MDC euclidiano compilado de C++ para WebAssembly via Emscripten.
-            Performance nativa entregue direto no browser.
-            <br><br>
-            <strong>Destaques:</strong>
-            <ul>
-                <li>Computações matemáticas de alta performance.</li>
-                <li>Integração fluida entre C++ e JavaScript.</li>
-                <li>Binário otimizado para carregamento rápido.</li>
-            </ul>
-        </div>
-        <div class="project-links">
-            <a href="#" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
-        </div>
-    </section>
-
-    <!-- Project 03 -->
-    <section class="card card-project-full">
-        <div class="project-header">
-            <span class="project-icon">🌱</span>
-            <div class="project-meta">project_03 // 2024</div>
-        </div>
-        <h2 class="project-title-lg">Enactus UFRA</h2>
-        <div class="project-tags">
-            <span class="project-tag">TI / IT Support</span>
-            <span class="project-tag">Infraestrutura</span>
-            <span class="project-tag">Impacto Social</span>
-        </div>
-        <div class="project-details" data-i18n="proj3.full_desc">
-            Suporte de TI para soluções de impacto social e educação tecnológica na Amazônia.
-            <br><br>
-            <strong>Destaques:</strong>
-            <ul>
-                <li>Gerenciamento de infraestrutura de servidores locais.</li>
-                <li>Workshops técnicos para a comunidade.</li>
-                <li>Desenvolvimento de ferramentas internas de gestão.</li>
-            </ul>
-        </div>
-    </section>
-
-</main>
-
-<footer>
-    © 2026 <span>André</span> · <span data-i18n="footer.text">Construído com Mentalidade C++</span> · Ananindeua/PA
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
