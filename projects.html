@@ -10,53 +10,92 @@
 </head>
 <body class="dashboard-layout">
 
-    <aside class="sidebar">
-        <div class="profile-section">
-            <div class="avatar-container">
-                <img src="/img/eu.png" alt="André" class="profile-img" onerror="this.style.display='none'">
-            </div>
-            <h1 class="profile-name">André<span>_</span></h1>
-            <p class="profile-bio" data-i18n="hero.bio">Estudante de Ciência da Computação na <strong>UFRA</strong>. Entusiasta Microsoft e apaixonado por performance.</p>
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <div class="profile-section">
+        <div class="avatar-container">
+            <img src="/img/eu.png" alt="André" class="profile-img" onerror="this.style.display='none'">
         </div>
-        <nav class="side-nav">
-            <a href="index.html" class="nav-item"><i class="fas fa-home"></i> <span data-i18n="nav.home">Home</span></a>
-            <a href="projects.html" class="nav-item active"><i class="fas fa-code"></i> <span data-i18n="nav.projects">Projetos</span></a>
-            <a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">Contato</span></a>
-        </nav>
-        <div class="sidebar-footer">
-            <button class="lang-btn-alt" onclick="toggleLang()">
-                <span id="lang-flag">🇧🇷</span> <span id="lang-label">PT</span>
+        <h1 class="profile-name">André Moraes<span>_</span></h1>
+        <p class="profile-bio" data-i18n="hero.bio">
+            Estudante de Ciência da Computação na <strong>UFRA</strong>. Entusiasta Microsoft e apaixonado por performance.
+        </p>
+    </div>
+
+    <nav class="side-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i> <span data-i18n="nav.home">Home</span></a>
+        <a href="projects.html" class="nav-item active"><i class="fas fa-code"></i> <span data-i18n="nav.projects">Projetos</span></a>
+        <a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">Contato</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+        <button class="lang-btn-alt" onclick="toggleLang()">
+            <span id="lang-flag">🇧🇷</span>
+            <span id="lang-label">PT</span>
+        </button>
+    </div>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+    <div class="header-flex">
+        <h1 class="page-title">Projetos</h1>
+        <div class="header-group">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="project-search" placeholder="Buscar projetos...">
+            </div>
+            <button id="open-filter" class="filter-open-btn">
+                <i class="fas fa-filter"></i> Filtros
             </button>
         </div>
-    </aside>
+    </div>
 
-    <main class="main-content">
-        <p class="section-title">// repositórios & projetos</p>
-        <div class="grid-container">
-                <section class="card card-project-full">
-    <div class="project-header">
-        <div class="main-tech">
-            <i class="fab fa-cuttlefish"></i> <span>C++</span>
+    <p class="section-title">// repositórios & projetos</p>
+
+    <div class="grid-container" id="projects-grid">
+
+        <section class="card card-project-full">
+            <div class="project-header">
+                <div class="main-tech">
+                    <i class="fab fa-cuttlefish"></i> <span>C++</span>
+                </div>
+                <div class="project-meta">project_01 // 2024</div>
+            </div>
+            <h2 class="project-title-lg">Math Quiz Terminal of Doom</h2>
+            <div class="project-tags">
+                <span class="project-tag">Win32 API</span>
+                <span class="project-tag">System Calls</span>
+                <span class="project-tag">Low-Level</span>
+            </div>
+            <div class="project-details">
+                Um quiz matemático de console em C++ com Win32 API. Se o usuário esgotar as vidas — calculadas pela RAM real do sistema — o computador é reiniciado. Sem clemência.
+            </div>
+            <div class="project-links">
+                <a href="#" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- MODAL DE FILTRO -->
+<div id="filter-modal" class="filter-modal">
+    <div class="filter-box">
+        <div class="filter-header">
+            <h3>Filtrar por linguagem</h3>
+            <button id="close-filter">&times;</button>
         </div>
-        <div class="project-meta">project_01 // 2024</div>
-    </div>
-    
-    <h2 class="project-title-lg">Math Quiz Terminal of Doom</h2>
-    
-    <div class="project-tags">
-        <span class="project-tag">Win32 API</span>
-        <span class="project-tag">System Calls</span>
-        <span class="project-tag">Low-Level</span>
-    </div>
-
-    <div class="project-details" data-i18n="proj1.full_desc">
-        Um quiz matemático de console em C++ com Win32 API...
-    </div>
-</section>
-                
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="c++">C++</button>
+            <button class="filter-btn" data-filter="react">React</button>
+            <button class="filter-btn" data-filter="typescript">TypeScript</button>
         </div>
-    </main>
+    </div>
+</div>
 
-    <script src="script.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>

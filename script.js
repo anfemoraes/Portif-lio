@@ -176,3 +176,51 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.card-project-full');
+
+filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter.toLowerCase();
+
+        // ativa botão selecionado
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        projectCards.forEach(card => {
+            const tech = card.querySelector('.main-tech span')
+                             .innerText.toLowerCase();
+
+            if (filter === 'all' || tech.includes(filter)) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    });
+});
+// ===== MODAL FILTRO =====
+const openFilterBtn = document.getElementById('open-filter');
+const closeFilterBtn = document.getElementById('close-filter');
+const modal = document.getElementById('filter-modal');
+
+if (openFilterBtn && modal) {
+    openFilterBtn.addEventListener('click', () => {
+        modal.classList.add('active');
+    });
+}
+
+if (closeFilterBtn) {
+    closeFilterBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+}
+
+// fechar clicando fora
+if (modal) {
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
+}
