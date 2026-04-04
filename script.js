@@ -56,9 +56,12 @@ function applyLang(l) {
     const v = T[l][el.dataset.i18n];
     if (v !== undefined) el.innerHTML = v;
   });
-  document.documentElement.lang          = l === 'pt' ? 'pt-br' : 'en';
-  document.getElementById('lang-flag').textContent  = l === 'pt' ? '🇺🇸' : '🇧🇷';
-  document.getElementById('lang-label').textContent = l === 'pt' ? 'EN'  : 'PT';
+  document.documentElement.lang = l === 'pt' ? 'pt-br' : 'en';
+  // Show the flag/label of the OTHER language (the one you'll switch TO)
+  const flagEl  = document.getElementById('lang-flag');
+  const labelEl = document.getElementById('lang-label');
+  if (flagEl)  flagEl.textContent  = l === 'pt' ? '🇺🇸' : '🇧🇷';
+  if (labelEl) labelEl.textContent = l === 'pt' ? 'EN'  : 'PT';
   lang = l;
 }
 
