@@ -25,6 +25,52 @@ body {
     min-height: 100vh;
     line-height: 1.6;
 }
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 8px 15px;
+    border-radius: 8px;
+    width: 300px;
+    transition: 0.2s;
+}
+
+.search-container:focus-within {
+    border-color: var(--blue);
+    box-shadow: 0 0 10px rgba(0, 200, 255, 0.1);
+}
+
+.search-container i {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+.search-container input {
+    background: none;
+    border: none;
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    outline: none;
+    width: 100%;
+}
+
+/* Esconder cards que não batem com a busca */
+.card-project-full.hidden {
+    display: none;
+}
 
 /* ===== DASHBOARD LAYOUT ===== */
 .dashboard-layout {

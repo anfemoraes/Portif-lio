@@ -154,3 +154,25 @@ window.addEventListener('DOMContentLoaded', () => {
   renderSkills();
   applyLang(currentLang);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('project-search');
+    const projectCards = document.querySelectorAll('.card-project-full');
+
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+
+            projectCards.forEach(card => {
+                // Pega todo o texto do card (título, tags, tech)
+                const content = card.innerText.toLowerCase();
+                
+                if (content.includes(term)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    }
+});
