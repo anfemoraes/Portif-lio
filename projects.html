@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>André | Projects</title>
+    <title>André | Projetos</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- ── TOP NAV ── -->
 <nav>
     <a href="index.html" class="logo">ANDRÉ<span>_</span></a>
     <ul>
-        <li><a href="index.html" data-i18n="nav.home">home</a></li>
-        <li><a href="projects.html" class="active" data-i18n="nav.projects">projects</a></li>
-        <li><a href="index.html#contact" data-i18n="nav.contact">contact</a></li>
+        <li><a href="index.html"    data-i18n="nav.home">Home</a></li>
+        <li><a href="projects.html" class="active" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.contact">Contato</a></li>
     </ul>
     <button class="lang-btn" onclick="toggleLang()">
-        <span class="flag" id="lang-flag">🇧🇷</span>
+        <span id="lang-flag">🇧🇷</span>
         <span id="lang-label">PT</span>
     </button>
 </nav>
 
+<!-- ── PROJECTS ── -->
 <main>
-    <!-- Project 1 Detailed -->
+
+    <!-- Project 01 -->
     <section class="card card-project-full">
         <div class="project-header">
             <span class="project-icon">⚡</span>
@@ -38,13 +41,14 @@
             <span class="project-tag">Low-Level</span>
         </div>
         <div class="project-details" data-i18n="proj1.full_desc">
-            A high-stakes console quiz built in C++ using the Win32 API. The twist: if the user runs out of lives — calculated from the system's actual RAM — the computer reboots. No mercy.
+            Quiz de matemática no terminal construído em C++ com a Win32 API.
+            O diferencial: se o usuário perder todas as vidas — calculadas com base na RAM real do sistema — o computador reinicia. Sem piedade.
             <br><br>
-            <strong>Key Features:</strong>
+            <strong>Destaques:</strong>
             <ul>
-                <li>Direct memory access via Win32 API.</li>
-                <li>Custom terminal rendering engine.</li>
-                <li>System-level integration for reboot commands.</li>
+                <li>Acesso direto à memória via Win32 API.</li>
+                <li>Engine de renderização customizada no terminal.</li>
+                <li>Integração com comandos de reboot no nível do sistema.</li>
             </ul>
         </div>
         <div class="project-links">
@@ -53,7 +57,7 @@
         </div>
     </section>
 
-    <!-- Project 2 Detailed -->
+    <!-- Project 02 -->
     <section class="card card-project-full">
         <div class="project-header">
             <span class="project-icon">🧮</span>
@@ -67,13 +71,14 @@
             <span class="project-tag">JavaScript</span>
         </div>
         <div class="project-details" data-i18n="proj2.full_desc">
-            Euclidean GCD algorithm compiled from C++ to WebAssembly via Emscripten. Native processing power delivered straight to the browser.
+            Algoritmo de MDC euclidiano compilado de C++ para WebAssembly via Emscripten.
+            Performance nativa entregue direto no browser.
             <br><br>
-            <strong>Key Features:</strong>
+            <strong>Destaques:</strong>
             <ul>
-                <li>High-performance mathematical computations.</li>
-                <li>Seamless C++ to JS integration.</li>
-                <li>Optimized binary size for fast loading.</li>
+                <li>Computações matemáticas de alta performance.</li>
+                <li>Integração fluida entre C++ e JavaScript.</li>
+                <li>Binário otimizado para carregamento rápido.</li>
             </ul>
         </div>
         <div class="project-links">
@@ -81,7 +86,7 @@
         </div>
     </section>
 
-    <!-- Project 3 Detailed -->
+    <!-- Project 03 -->
     <section class="card card-project-full">
         <div class="project-header">
             <span class="project-icon">🌱</span>
@@ -89,25 +94,26 @@
         </div>
         <h2 class="project-title-lg">Enactus UFRA</h2>
         <div class="project-tags">
-            <span class="project-tag">IT Support</span>
-            <span class="project-tag">Infrastructure</span>
-            <span class="project-tag">Social Impact</span>
+            <span class="project-tag">TI / IT Support</span>
+            <span class="project-tag">Infraestrutura</span>
+            <span class="project-tag">Impacto Social</span>
         </div>
         <div class="project-details" data-i18n="proj3.full_desc">
-            IT support for social impact solutions and tech education in the Amazon region.
+            Suporte de TI para soluções de impacto social e educação tecnológica na Amazônia.
             <br><br>
-            <strong>Key Features:</strong>
+            <strong>Destaques:</strong>
             <ul>
-                <li>Managing local server infrastructure.</li>
-                <li>Providing technical workshops for the community.</li>
-                <li>Developing internal tools for project management.</li>
+                <li>Gerenciamento de infraestrutura de servidores locais.</li>
+                <li>Workshops técnicos para a comunidade.</li>
+                <li>Desenvolvimento de ferramentas internas de gestão.</li>
             </ul>
         </div>
     </section>
+
 </main>
 
 <footer>
-    © 2026 <span>André</span> · <span data-i18n="footer.text">Built with a C++ Mindset</span> · Ananindeua/PA
+    © 2026 <span>André</span> · <span data-i18n="footer.text">Construído com Mentalidade C++</span> · Ananindeua/PA
 </footer>
 
 <script src="script.js"></script>
