@@ -14,23 +14,21 @@
 <aside class="sidebar">
     <div class="profile-section">
         <div class="avatar-container">
-            <img src="/img/eu.png" alt="André" class="profile-img" onerror="this.style.display='none'">
+            <img src="img/eu.png" alt="André" class="profile-img" onerror="this.style.display='none'">
         </div>
         <h1 class="profile-name">André Moraes<span>_</span></h1>
         <p class="profile-bio" data-i18n="hero.bio">
-            Estudante de Ciência da Computação na <strong>UFRA</strong>. Entusiasta Microsoft e apaixonado por performance.
+            Dev Full Stack & Cloud · Graduando em Ciência da Computação na <strong>UFRA</strong>. Multilíngue · Apaixonado por performance.
         </p>
     </div>
-
     <nav class="side-nav">
         <a href="index.html" class="nav-item"><i class="fas fa-home"></i> <span data-i18n="nav.home">Home</span></a>
         <a href="projects.html" class="nav-item active"><i class="fas fa-code"></i> <span data-i18n="nav.projects">Projetos</span></a>
         <a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">Contato</span></a>
     </nav>
-
     <div class="sidebar-footer">
-        <button class="lang-btn-alt" onclick="toggleLang()">
-            <span id="lang-flag">🇧🇷</span>
+        <button class="lang-btn-alt" onclick="toggleLang()" title="Trocar idioma / Switch language">
+            <span id="lang-flag"></span>
             <span id="lang-label">PT</span>
         </button>
     </div>
@@ -40,7 +38,7 @@
 <main class="main-content">
 
     <div class="header-flex">
-        <h1 class="page-title">Projetos</h1>
+        <h1 class="page-title" data-i18n-auto data-original-text="Projetos">Projetos</h1>
         <div class="header-group">
             <div class="search-container">
                 <i class="fas fa-search"></i>
@@ -52,16 +50,76 @@
         </div>
     </div>
 
-    <p class="section-title">// repositórios & projetos</p>
+    <p class="section-title" data-i18n-auto data-original-text="// repositórios & projetos">// repositórios & projetos</p>
 
     <div class="grid-container" id="projects-grid">
 
+        <!-- Enactus -->
         <section class="card card-project-full">
             <div class="project-header">
-                <div class="main-tech">
-                    <i class="fab fa-cuttlefish"></i> <span>C++</span>
-                </div>
-                <div class="project-meta">project_01 // 2024</div>
+                <div class="main-tech"><i class="fab fa-react"></i> <span>React</span></div>
+                <div class="project-meta">project_01 // 2025 – atual</div>
+            </div>
+            <h2 class="project-title-lg">Enactus UFRA — Plataforma de Impacto Social</h2>
+            <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Social Impact</span>
+            </div>
+            <div class="project-details" data-i18n-auto data-original-text="Organização de ideias e produção de sistemas com React e Node.js voltados para inovação social e sustentabilidade, atuando como membro de tecnologia da Enactus UFRA-PA.">
+                Organização de ideias e produção de sistemas com React e Node.js voltados para inovação social e sustentabilidade, atuando como membro de tecnologia da Enactus UFRA-PA.
+            </div>
+            <div class="project-links">
+                <a href="#" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </section>
+
+        <!-- Miaudota -->
+        <section class="card card-project-full">
+            <div class="project-header">
+                <div class="main-tech"><i class="fab fa-react"></i> <span>React</span></div>
+                <div class="project-meta">project_02 // 2025</div>
+            </div>
+            <h2 class="project-title-lg">Miaudota — Plataforma de Adoção de Pets</h2>
+            <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">REST API</span>
+                <span class="project-tag">Full Stack</span>
+                <span class="project-tag">UX</span>
+            </div>
+            <div class="project-details" data-i18n-auto data-original-text="Plataforma web Full Stack de adoção de animais para ONGs. Desenvolvida com React e APIs REST, com foco em usabilidade e experiência do usuário.">
+                Plataforma web Full Stack de adoção de animais para ONGs. Desenvolvida com React e APIs REST, com foco em usabilidade e experiência do usuário.
+            </div>
+            <div class="project-links">
+                <a href="#" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </section>
+
+        <!-- Hackathon BB -->
+        <section class="card card-project-full card-highlight">
+            <div class="project-header">
+                <div class="main-tech"><i class="fas fa-trophy"></i> <span>Hackathon</span></div>
+                <div class="project-meta">project_03 // 2025 · 🏆 Top 10 Nacional</div>
+            </div>
+            <h2 class="project-title-lg">Hackathon Banco do Brasil — Educação Financeira</h2>
+            <div class="project-tags">
+                <span class="project-tag">Gamificação</span>
+                <span class="project-tag">FinTech</span>
+                <span class="project-tag">Top 10 Nacional</span>
+            </div>
+            <div class="project-details" data-i18n-auto data-original-text="Solução de educação financeira com gamificação desenvolvida na fase final do Hackathon Banco do Brasil. Selecionado entre as Top 10 equipes nacionais para o Pitch.">
+                Solução de educação financeira com gamificação desenvolvida na fase final do Hackathon Banco do Brasil. Selecionado entre as Top 10 equipes nacionais para o Pitch.
+            </div>
+            <div class="project-links">
+                <a href="#" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </section>
+
+        <!-- Math Quiz Terminal of Doom -->
+        <section class="card card-project-full">
+            <div class="project-header">
+                <div class="main-tech"><i class="fab fa-cuttlefish"></i> <span>C++</span></div>
+                <div class="project-meta">project_04 // 2024</div>
             </div>
             <h2 class="project-title-lg">Math Quiz Terminal of Doom</h2>
             <div class="project-tags">
@@ -69,8 +127,8 @@
                 <span class="project-tag">System Calls</span>
                 <span class="project-tag">Low-Level</span>
             </div>
-            <div class="project-details">
-                Um quiz matemático de console em C++ com Win32 API. Se o usuário esgotar as vidas — calculadas pela RAM real do sistema — o computador é reiniciado. Sem clemência.
+            <div class="project-details" data-i18n-auto data-original-text="Quiz matemático de console em C++ usando Win32 API. Se o usuário esgotar as vidas — calculadas pela RAM real do sistema — o computador é reiniciado. Sem clemência.">
+                Quiz matemático de console em C++ usando Win32 API. Se o usuário esgotar as vidas — calculadas pela RAM real do sistema — o computador é reiniciado. Sem clemência.
             </div>
             <div class="project-links">
                 <a href="#" class="btn-link btn-gh"><i class="fab fa-github"></i> GitHub</a>
@@ -84,14 +142,14 @@
 <div id="filter-modal" class="filter-modal">
     <div class="filter-box">
         <div class="filter-header">
-            <h3>Filtrar por linguagem</h3>
+            <h3 data-i18n-auto data-original-text="Filtrar por linguagem">Filtrar por linguagem</h3>
             <button id="close-filter">&times;</button>
         </div>
         <div class="filter-container">
             <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="c++">C++</button>
             <button class="filter-btn" data-filter="react">React</button>
-            <button class="filter-btn" data-filter="typescript">TypeScript</button>
+            <button class="filter-btn" data-filter="c++">C++</button>
+            <button class="filter-btn" data-filter="hackathon">Hackathon</button>
         </div>
     </div>
 </div>

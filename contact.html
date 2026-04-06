@@ -13,10 +13,10 @@
     <aside class="sidebar">
         <div class="profile-section">
             <div class="avatar-container">
-                <img src="/img/eu.png" alt="André" class="profile-img" onerror="this.style.display='none'">
+                <img src="img/eu.png" alt="André" class="profile-img" onerror="this.style.display='none'">
             </div>
             <h1 class="profile-name">André Moraes<span>_</span></h1>
-            <p class="profile-bio" data-i18n="hero.bio">Estudante de Ciência da Computação na <strong>UFRA</strong>.</p>
+            <p class="profile-bio" data-i18n="hero.bio">Estudante de Ciência da Computação na <strong>UFRA</strong>. Entusiasta Microsoft e apaixonado por performance.</p>
         </div>
         <nav class="side-nav">
             <a href="index.html" class="nav-item"><i class="fas fa-home"></i> <span data-i18n="nav.home">Home</span></a>
@@ -24,36 +24,56 @@
             <a href="contact.html" class="nav-item active"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">Contato</span></a>
         </nav>
         <div class="sidebar-footer">
-            <button class="lang-btn-alt" onclick="toggleLang()">
-                <span id="lang-flag">🇧🇷</span>
+            <button class="lang-btn-alt" onclick="toggleLang()" title="Trocar idioma / Switch language">
+                <span id="lang-flag"></span>
                 <span id="lang-label">PT</span>
             </button>
         </div>
     </aside>
 
     <main class="main-content">
-        <p class="section-title">// canais de comunicação</p>
+        <p class="section-title" data-i18n-auto data-original-text="// canais de comunicação">// canais de comunicação</p>
         <div class="grid-container">
 
+            <!-- GitHub -->
             <section class="card contact-card">
                 <i class="fab fa-github contact-icon"></i>
                 <h3>GitHub</h3>
-                <p>Explorar meus repositórios</p>
-                <a href="#" class="btn-demo">Acessar perfil</a>
+                <p data-i18n-auto data-original-text="Explorar meus repositórios">Explorar meus repositórios</p>
+                <a href="https://github.com/andrefmoraes" target="_blank" class="btn-demo" data-i18n-auto data-original-text="Acessar perfil">Acessar perfil</a>
             </section>
 
+            <!-- LinkedIn -->
             <section class="card contact-card">
                 <i class="fab fa-linkedin contact-icon"></i>
                 <h3>LinkedIn</h3>
-                <p>Conectar profissionalmente</p>
-                <a href="#" class="btn-demo">Acessar perfil</a>
+                <p data-i18n-auto data-original-text="Conectar profissionalmente">Conectar profissionalmente</p>
+                <a href="https://linkedin.com/in/andrefmoraes" target="_blank" class="btn-demo" data-i18n-auto data-original-text="Acessar perfil">Acessar perfil</a>
             </section>
 
+            <!-- E-mail -->
             <section class="card contact-card">
                 <i class="fas fa-envelope contact-icon"></i>
                 <h3>E-mail</h3>
                 <p>andremoraes2327@gmail.com</p>
-                <a href="mailto:andremoraes2327@gmail.com" class="btn-demo">Enviar mensagem</a>
+                <a href="mailto:andremoraes2327@gmail.com" class="btn-demo" data-i18n-auto data-original-text="Enviar mensagem">Enviar mensagem</a>
+            </section>
+
+            <!-- Currículo — card destaque -->
+            <section class="card contact-card cv-card">
+                <i class="fas fa-file-alt contact-icon cv-icon"></i>
+                <h3 data-i18n-auto data-original-text="Currículo">Currículo</h3>
+                <p data-i18n-auto data-original-text="Baixar meu CV completo em PDF">Baixar meu CV completo em PDF</p>
+                <div class="cv-buttons">
+                    <a href="cv.pdf" download="Andre_Moraes_CV.pdf" class="btn-demo btn-cv-download">
+                        <i class="fas fa-download"></i>
+                        <span data-i18n-auto data-original-text="Download PDF">Download PDF</span>
+                    </a>
+                    <a href="https://www.overleaf.com/project/695f30a019f9c8dc57c9e774" target="_blank" class="btn-link btn-gh">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span data-i18n-auto data-original-text="Ver no Overleaf">Ver no Overleaf</span>
+                    </a>
+                </div>
             </section>
 
         </div>
