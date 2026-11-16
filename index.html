@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0F172A">
-    <meta name="description" content="Portfólio de André Moraes, desenvolvedor de software com foco em aplicações web, cloud e performance." data-i18n-content="page.description">
-    <title data-i18n="page.title">André Moraes — Desenvolvedor de Software</title>
+    <meta name="description" content="Portfólio de André Moraes — Engenheiro de Software Full Stack e Cloud (AWS), com foco em performance, acessibilidade e sistemas em produção." data-i18n-content="page.description">
+    <title data-i18n="page.title">André Moraes — Engenheiro de Software Full Stack & Cloud</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -14,13 +14,13 @@
 
     <header class="site-header" id="topo">
         <div class="header-inner">
-            <a class="brand" href="#topo" aria-label="André Moraes — início">
+            <a class="brand" href="#topo" aria-label="André Moraes — início" data-i18n-aria-label="brand.home">
                 <span class="brand-mark" aria-hidden="true">
                     <img src="img/eu.png" alt="">
                 </span>
                 <span>
                     <strong>André Moraes</strong>
-                    <small data-i18n="brand.role">Desenvolvedor de Software</small>
+                    <small data-i18n="brand.role">Engenheiro de Software · Full Stack & Cloud</small>
                 </span>
             </a>
 
@@ -56,8 +56,8 @@
                 <p class="eyebrow" data-i18n="intro.eyebrow">PORTFÓLIO / 2026</p>
                 <h1 id="intro-title"><span data-i18n="intro.titlePrefix">Construindo software com</span> <span class="intro-highlight" data-i18n="intro.titleAccent">propósito.</span></h1>
                 <p class="intro-copy" data-i18n="intro.description">
-                    Desenvolvedor Full Stack & Cloud e estudante de Ciência da Computação na UFRA.
-                    Crio experiências web focadas em performance, acessibilidade e impacto.
+                    Engenheiro de Software Full Stack & Cloud (AWS), estudante de Ciência da Computação na UFRA.
+                    Construo aplicações web, automações e soluções em nuvem — com foco em performance, acessibilidade e impacto real.
                 </p>
                 <div class="intro-links" aria-label="Links de contato" data-i18n-aria-label="intro.links">
                     <a class="icon-link" href="https://github.com/anfemoraes" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -66,19 +66,23 @@
                         </svg>
                         <span>GitHub</span>
                     </a>
-                    <a class="icon-link" href="https://linkedin.com/in/andrefmoraes" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a class="icon-link" href="https://www.linkedin.com/in/andr%C3%A9-moraes-99940636a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM2 9h4v12H2z"></path>
                             <circle cx="4" cy="4" r="2"></circle>
                         </svg>
                         <span>LinkedIn</span>
                     </a>
-                    <a class="icon-link" href="mailto:andremoraes2327@gmail.com" aria-label="Enviar e-mail">
+                    <a class="icon-link" href="mailto:andremoras2327@gmail.com" aria-label="Enviar e-mail" data-i18n-aria-label="link.emailLabel">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                             <rect x="3" y="5" width="18" height="14" rx="2"></rect>
                             <path d="m3 7 9 6 9-6"></path>
                         </svg>
-                        <span>E-mail</span>
+                        <span data-i18n="link.email">E-mail</span>
+                    </a>
+                    <a class="icon-link" href="cv.pdf" download="CV-Andre-Moraes.pdf" aria-label="Baixar CV (PDF)" data-i18n-aria-label="cv.label">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16"></path></svg>
+                        <span data-i18n="cv.button">Baixar CV</span>
                     </a>
                 </div>
             </div>
@@ -90,15 +94,16 @@
                     <p class="eyebrow" data-i18n="projects.eyebrow">TRABALHOS SELECIONADOS</p>
                     <h2 id="projects-title" data-i18n="projects.title">Projetos</h2>
                 </div>
-                <p class="section-note" data-i18n="projects.note">Ideias transformadas em soluções digitais.</p>
+                <p class="section-note" data-i18n="projects.note">Ideias transformadas em soluções digitais — do full stack ao serverless.</p>
             </div>
 
             <div class="project-filters" role="group" aria-label="Filtrar projetos por tecnologia" data-i18n-aria-label="projects.filters">
                 <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true" data-i18n="filter.all">Todos</button>
-                <button class="filter-button" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+                <button class="filter-button" type="button" data-filter="cloud" aria-pressed="false">Cloud</button>
+                <button class="filter-button" type="button" data-filter="devops" aria-pressed="false">DevOps</button>
                 <button class="filter-button" type="button" data-filter="react" aria-pressed="false">React</button>
                 <button class="filter-button" type="button" data-filter="node.js" aria-pressed="false">Node.js</button>
-                <button class="filter-button" type="button" data-filter="c++" aria-pressed="false">C++</button>
+                <button class="filter-button" type="button" data-filter="php" aria-pressed="false">PHP</button>
             </div>
 
             <div class="project-carousel" id="project-carousel" data-mode="list" aria-label="Carrossel de projetos" data-i18n-aria-label="projects.carousel">
@@ -106,35 +111,86 @@
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
                 </button>
                 <div class="project-grid" id="project-grid" aria-live="polite">
-                <article class="project-card is-current" data-technologies="javascript react node.js" aria-hidden="false">
-                    <figure class="project-preview preview-enactus" aria-hidden="true">
+
+                <!-- 01 · CHRONOSIA (Serverless / AWS) -->
+                <article class="project-card project-card-featured is-current" data-technologies="cloud devops node.js" aria-hidden="false">
+                    <figure class="project-preview preview-chronos" aria-hidden="true">
                         <svg viewBox="0 0 640 240">
-                            <rect width="640" height="240" rx="18" fill="#10332f"></rect>
-                            <rect x="24" y="24" width="592" height="192" rx="12" fill="#142923"></rect>
-                            <circle cx="52" cy="50" r="7" fill="#4ade80"></circle><circle cx="74" cy="50" r="7" fill="#86efac"></circle>
-                            <rect x="42" y="82" width="116" height="10" rx="5" fill="#47665c"></rect><rect x="42" y="105" width="86" height="8" rx="4" fill="#334f46"></rect>
-                            <rect x="42" y="132" width="116" height="60" rx="9" fill="#1d4034"></rect>
-                            <path d="M66 177c-8-30 6-48 38-54 4 28-5 46-28 55m-14-1c14-12 25-23 37-39" fill="none" stroke="#4ade80" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path>
-                            <rect x="186" y="78" width="398" height="114" rx="10" fill="#1c352c"></rect>
-                            <path d="M210 164h340M220 147l60-26 57 16 62-44 55 18 73-43" fill="none" stroke="#4ade80" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path>
-                            <circle cx="527" cy="68" r="17" fill="#255540"></circle><path d="m519 68 6 6 11-13" fill="none" stroke="#bbf7d0" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                            <rect width="640" height="240" rx="18" fill="#0b1f3a"></rect>
+                            <rect x="24" y="24" width="592" height="192" rx="12" fill="#0f2a4a"></rect>
+                            <circle cx="52" cy="50" r="7" fill="#38bdf8"></circle><circle cx="74" cy="50" r="7" fill="#818cf8"></circle>
+                            <rect x="42" y="82" width="116" height="10" rx="5" fill="#1e4a7a"></rect><rect x="42" y="105" width="86" height="8" rx="4" fill="#163a5f"></rect>
+                            <rect x="42" y="132" width="116" height="60" rx="9" fill="#123456"></rect>
+                            <path d="M58 172h84M66 160l18-12 14 6 20-16" fill="none" stroke="#38bdf8" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+                            <rect x="186" y="78" width="398" height="114" rx="10" fill="#123456"></rect>
+                            <text x="210" y="120" fill="#7dd3fc" font-family="monospace" font-size="16" data-i18n="preview.chronos.line1">AWS Lambda · S3 · ~50k docs/mês</text>
+                            <text x="210" y="150" fill="#94a3b8" font-family="monospace" font-size="14" data-i18n="preview.chronos.line2">ingestão · governança · base histórica</text>
+                            <circle cx="527" cy="68" r="17" fill="#1d4ed8"></circle><path d="m519 68 6 6 11-13" fill="none" stroke="#bfdbfe" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
                         </svg>
                     </figure>
                     <div class="project-topline">
-                        <span class="project-mark mark-enactus" aria-hidden="true">
-                            <svg viewBox="0 0 24 24"><path d="M20 4C11 4 5 8 5 14a6 6 0 0 0 6 6c6 0 9-6 9-16Z"></path><path d="M4 20c3-4 6-7 11-10"></path></svg>
+                        <span class="project-mark mark-chronos" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
                         </span>
                         <span class="project-number">01</span>
-                        <span class="project-type" data-i18n="project.enactus.type">Impacto social</span>
+                        <span class="project-type" data-i18n="project.chronos.type">Serverless</span>
                     </div>
-                    <h3>Enactus UFRA</h3>
-                    <p class="project-description" data-i18n="project.enactus.description">
-                        Sistemas web para apoiar iniciativas de inovação social e sustentabilidade da Enactus UFRA.
+                    <h3>ChronosIA</h3>
+                    <p class="project-description" data-i18n="project.chronos.description">
+                        Arquitetura serverless na AWS para ingestão e governança de ~50 mil documentos/mês (PDFs e imagens), preservando a base histórica para análises futuras.
                     </p>
                     <ul class="tag-list" aria-label="Tecnologias" data-i18n-aria-label="project.technologies">
-                        <li>React</li>
-                        <li>JavaScript</li>
-                        <li>Node.js</li>
+                        <li><span class="tag-icon" data-tech="amazonaws" aria-hidden="true"></span>AWS Lambda</li>
+                        <li><span class="tag-icon" data-tech="amazonaws" aria-hidden="true"></span>S3</li>
+                        <li>Serverless</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="button button-secondary" href="https://github.com/JulielenArnoud/ChronosIA" target="_blank" rel="noopener noreferrer">
+                            <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6S17.5 1.2 15 3a13.4 13.4 0 0 0-7 0C5.5 1.2 4.3 1.5 4.3 1.5a4.8 4.8 0 0 0-.1 3.6A5.2 5.2 0 0 0 2.8 8.7c0 5.2 3.1 6.4 6.1 6.7a3.4 3.4 0 0 0-.9 2.7V22"></path>
+                            </svg>
+                            <span data-i18n="project.code">Código (GitHub)</span>
+                        </a>
+                        <button class="button button-disabled" type="button" disabled title="Link de deploy ainda não informado" data-i18n-title="project.deployTitle">
+                            <svg class="deploy-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7m0-7L10 14"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            <span data-i18n="project.deploy">Ver Projeto (Deploy)</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 02 · CARGO TRUCK (DevOps / Cloud Native) -->
+                <article class="project-card" data-technologies="cloud devops react node.js" aria-hidden="false">
+                    <figure class="project-preview preview-cargo" aria-hidden="true">
+                        <svg viewBox="0 0 640 240">
+                            <rect width="640" height="240" rx="18" fill="#1f2937"></rect>
+                            <rect x="24" y="24" width="592" height="192" rx="12" fill="#111827"></rect>
+                            <circle cx="52" cy="50" r="7" fill="#f59e0b"></circle><circle cx="74" cy="50" r="7" fill="#fbbf24"></circle>
+                            <rect x="42" y="82" width="116" height="10" rx="5" fill="#374151"></rect><rect x="42" y="105" width="86" height="8" rx="4" fill="#2b3445"></rect>
+                            <rect x="42" y="132" width="116" height="60" rx="9" fill="#1f2937"></rect>
+                            <path d="M58 176h84m-70-14 22-12 18 8 24-18" fill="none" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+                            <rect x="186" y="78" width="398" height="114" rx="10" fill="#1f2937"></rect>
+                            <text x="210" y="120" fill="#fcd34d" font-family="monospace" font-size="16">Docker · Terraform · GitHub Actions</text>
+                            <text x="210" y="150" fill="#9ca3af" font-family="monospace" font-size="14">VPC · EC2 · CI/CD · Rust/Axum</text>
+                            <circle cx="527" cy="68" r="17" fill="#b45309"></circle><path d="m519 68 6 6 11-13" fill="none" stroke="#fde68a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                        </svg>
+                    </figure>
+                    <div class="project-topline">
+                        <span class="project-mark mark-cargo" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z"></path><circle cx="7" cy="17" r="2"></circle><circle cx="17" cy="17" r="2"></circle></svg>
+                        </span>
+                        <span class="project-number">02</span>
+                        <span class="project-type" data-i18n="project.cargo.type">DevOps · Cloud</span>
+                    </div>
+                    <h3>Cargo Truck</h3>
+                    <p class="project-description" data-i18n="project.cargo.description">
+                        Aplicação full stack de gestão logística (React, TypeScript, Rust/Axum, PostgreSQL) com fluxo DevOps Cloud Native ponta a ponta: Docker, CI/CD no GitHub Actions e infraestrutura provisionada com Terraform na AWS.
+                    </p>
+                    <ul class="tag-list" aria-label="Tecnologias" data-i18n-aria-label="project.technologies">
+                        <li><span class="tag-icon" data-tech="react" aria-hidden="true"></span>React</li>
+                        <li><span class="tag-icon" data-tech="rust" aria-hidden="true"></span>Rust</li>
+                        <li><span class="tag-icon" data-tech="docker" aria-hidden="true"></span>Docker</li>
+                        <li><span class="tag-icon" data-tech="terraform" aria-hidden="true"></span>Terraform</li>
+                        <li><span class="tag-icon" data-tech="amazonaws" aria-hidden="true"></span>AWS</li>
                     </ul>
                     <div class="project-actions">
                         <a class="button button-secondary" href="https://github.com/anfemoraes?tab=repositories" target="_blank" rel="noopener noreferrer">
@@ -150,7 +206,54 @@
                     </div>
                 </article>
 
-                <article class="project-card" data-technologies="javascript react" aria-hidden="false">
+                <!-- 03 · POTYARA / ENACTUS (Impacto social · Top 4) -->
+                <article class="project-card" data-technologies="react node.js" aria-hidden="false">
+                    <figure class="project-preview preview-enactus" aria-hidden="true">
+                        <svg viewBox="0 0 640 240">
+                            <rect width="640" height="240" rx="18" fill="#10332f"></rect>
+                            <rect x="24" y="24" width="592" height="192" rx="12" fill="#142923"></rect>
+                            <circle cx="52" cy="50" r="7" fill="#4ade80"></circle><circle cx="74" cy="50" r="7" fill="#86efac"></circle>
+                            <rect x="42" y="82" width="116" height="10" rx="5" fill="#47665c"></rect><rect x="42" y="105" width="86" height="8" rx="4" fill="#334f46"></rect>
+                            <rect x="42" y="132" width="116" height="60" rx="9" fill="#1d4034"></rect>
+                            <path d="M66 177c-8-30 6-48 38-54 4 28-5 46-28 55m-14-1c14-12 25-23 37-39" fill="none" stroke="#4ade80" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path>
+                            <rect x="186" y="78" width="398" height="114" rx="10" fill="#1c352c"></rect>
+                            <text x="210" y="118" fill="#86efac" font-family="monospace" font-size="16" data-i18n="preview.potyara.line1">Potyara · kits de engenharia civil</text>
+                            <text x="210" y="148" fill="#a7f3d0" font-family="monospace" font-size="14" data-i18n="preview.potyara.line2">Top 4 · Edital Canteiro Lab 2026</text>
+                            <circle cx="527" cy="68" r="17" fill="#255540"></circle><path d="m519 68 6 6 11-13" fill="none" stroke="#bbf7d0" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                        </svg>
+                    </figure>
+                    <div class="project-topline">
+                        <span class="project-mark mark-enactus" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M20 4C11 4 5 8 5 14a6 6 0 0 0 6 6c6 0 9-6 9-16Z"></path><path d="M4 20c3-4 6-7 11-10"></path></svg>
+                        </span>
+                        <span class="project-number">03</span>
+                        <span class="project-type" data-i18n="project.potyara.type">Impacto social</span>
+                    </div>
+                    <h3>Potyara · Enactus UFRA</h3>
+                    <p class="project-description" data-i18n="project.potyara.description">
+                        Plataforma para montagem de kits na engenharia civil — Top 4 do Edital Canteiro Lab 2026. Atuação em arquitetura, automações e implementação técnica de requisitos de fomento.
+                    </p>
+                    <ul class="tag-list" aria-label="Tecnologias" data-i18n-aria-label="project.technologies">
+                        <li><span class="tag-icon" data-tech="react" aria-hidden="true"></span>React</li>
+                        <li><span class="tag-icon" data-tech="nodedotjs" aria-hidden="true"></span>Node.js</li>
+                        <li data-i18n="tag.socialImpact">Impacto social</li>
+                    </ul>
+                    <div class="project-actions">
+                        <a class="button button-secondary" href="https://github.com/anfemoraes?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6S17.5 1.2 15 3a13.4 13.4 0 0 0-7 0C5.5 1.2 4.3 1.5 4.3 1.5a4.8 4.8 0 0 0-.1 3.6A5.2 5.2 0 0 0 2.8 8.7c0 5.2 3.1 6.4 6.1 6.7a3.4 3.4 0 0 0-.9 2.7V22"></path>
+                            </svg>
+                            <span data-i18n="project.code">Código (GitHub)</span>
+                        </a>
+                        <button class="button button-disabled" type="button" disabled title="Link de deploy ainda não informado" data-i18n-title="project.deployTitle">
+                            <svg class="deploy-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7m0-7L10 14"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                            <span data-i18n="project.deploy">Ver Projeto (Deploy)</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 04 · MIAUDOTA -->
+                <article class="project-card" data-technologies="react node.js" aria-hidden="false">
                     <figure class="project-preview preview-miaudota" aria-hidden="true">
                         <svg viewBox="0 0 640 240">
                             <rect width="640" height="240" rx="18" fill="#402c43"></rect>
@@ -168,17 +271,17 @@
                         <span class="project-mark mark-miaudota" aria-hidden="true">
                             <svg viewBox="0 0 24 24"><path d="M12 13c-2.8-3.6-7-2.1-7 1.6 0 2.1 1.6 3.8 3.6 3.8 1.4 0 2.1-1 3.4-1s2 1 3.4 1c2 0 3.6-1.7 3.6-3.8 0-3.7-4.2-5.2-7-1.6Z"></path><ellipse cx="5.6" cy="8.2" rx="1.5" ry="2"></ellipse><ellipse cx="9.3" cy="6.3" rx="1.5" ry="2"></ellipse><ellipse cx="14.7" cy="6.3" rx="1.5" ry="2"></ellipse><ellipse cx="18.4" cy="8.2" rx="1.5" ry="2"></ellipse></svg>
                         </span>
-                        <span class="project-number">02</span>
+                        <span class="project-number">04</span>
                         <span class="project-type" data-i18n="project.miaudota.type">Web app</span>
                     </div>
                     <h3>Miaudota</h3>
                     <p class="project-description" data-i18n="project.miaudota.description">
-                        Plataforma de adoção que conecta ONGs e pessoas, com foco em tornar a busca por um novo lar mais simples.
+                        Plataforma de adoção que conecta ONGs e pessoas (React + Node.js + PostgreSQL), com foco em usabilidade e acessibilidade.
                     </p>
                     <ul class="tag-list" aria-label="Tecnologias" data-i18n-aria-label="project.technologies">
-                        <li>React</li>
-                        <li>JavaScript</li>
-                        <li>REST API</li>
+                        <li><span class="tag-icon" data-tech="react" aria-hidden="true"></span>React</li>
+                        <li><span class="tag-icon" data-tech="nodedotjs" aria-hidden="true"></span>Node.js</li>
+                        <li><span class="tag-icon" data-tech="postgresql" aria-hidden="true"></span>PostgreSQL</li>
                     </ul>
                     <div class="project-actions">
                         <a class="button button-secondary" href="https://github.com/anfemoraes?tab=repositories" target="_blank" rel="noopener noreferrer">
@@ -194,7 +297,8 @@
                     </div>
                 </article>
 
-                <article class="project-card project-card-featured" data-technologies="javascript hackathon" aria-hidden="false">
+                <!-- 05 · HACKATHON BB -->
+                <article class="project-card" data-technologies="react node.js" aria-hidden="false">
                     <figure class="project-preview preview-hackathon" aria-hidden="true">
                         <svg viewBox="0 0 640 240">
                             <rect width="640" height="240" rx="18" fill="#172647"></rect>
@@ -213,7 +317,7 @@
                         <span class="project-mark mark-hackathon" aria-hidden="true">
                             <svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0V4Z"></path><path d="M8 6H5v2a4 4 0 0 0 4 4m7-6h3v2a4 4 0 0 1-4 4m-3 1v4m-4 3h8m-6-3h4"></path></svg>
                         </span>
-                        <span class="project-number">03</span>
+                        <span class="project-number">05</span>
                         <span class="project-type" data-i18n="project.hackathon.type">Top 10 nacional</span>
                     </div>
                     <h3>Hackathon Banco do Brasil</h3>
@@ -221,9 +325,9 @@
                         Solução gamificada de educação financeira apresentada entre as dez melhores equipes do país.
                     </p>
                     <ul class="tag-list" aria-label="Tecnologias e áreas" data-i18n-aria-label="project.technologiesAndFields">
-                        <li>JavaScript</li>
+                        <li><span class="tag-icon" data-tech="react" aria-hidden="true"></span>React</li>
                         <li>FinTech</li>
-                        <li>Gamificação</li>
+                        <li data-i18n="tag.gamification">Gamificação</li>
                     </ul>
                     <div class="project-actions">
                         <a class="button button-secondary" href="https://github.com/anfemoraes?tab=repositories" target="_blank" rel="noopener noreferrer">
@@ -239,36 +343,38 @@
                     </div>
                 </article>
 
-                <article class="project-card" data-technologies="c++" aria-hidden="false">
-                    <figure class="project-preview preview-quiz" aria-hidden="true">
+                <!-- 06 · FICAT UFRA (PHP legado → modernização) -->
+                <article class="project-card" data-technologies="php" aria-hidden="false">
+                    <figure class="project-preview preview-ficat" aria-hidden="true">
                         <svg viewBox="0 0 640 240">
-                            <rect width="640" height="240" rx="18" fill="#111827"></rect>
-                            <rect x="24" y="24" width="592" height="192" rx="12" fill="#0b1220" stroke="#334155" stroke-width="2"></rect>
-                            <circle cx="50" cy="48" r="6" fill="#fb7185"></circle><circle cx="71" cy="48" r="6" fill="#fbbf24"></circle><circle cx="92" cy="48" r="6" fill="#4ade80"></circle>
-                            <path d="M42 70h556" stroke="#263449" stroke-width="2"></path>
-                            <text x="54" y="105" fill="#4ade80" font-family="monospace" font-size="19">C:\QUIZ&gt; start challenge</text>
-                            <text x="54" y="139" fill="#cbd5e1" font-family="monospace" font-size="18">2 + 2 = ?</text>
-                            <text x="54" y="173" fill="#94a3b8" font-family="monospace" font-size="16">LIVES [■■■]   SCORE [ 040 ]</text>
-                            <rect x="493" y="125" width="73" height="42" rx="8" fill="#163b2a" stroke="#4ade80" stroke-width="2"></rect>
-                            <text x="529" y="153" text-anchor="middle" fill="#4ade80" font-family="monospace" font-size="22" font-weight="700">4</text>
-                            <rect x="54" y="188" width="106" height="5" rx="2.5" fill="#22c55e"></rect>
+                            <rect width="640" height="240" rx="18" fill="#3b1f1f"></rect>
+                            <rect x="24" y="24" width="592" height="192" rx="12" fill="#1f1414"></rect>
+                            <circle cx="52" cy="50" r="7" fill="#f87171"></circle><circle cx="74" cy="50" r="7" fill="#fca5a5"></circle>
+                            <rect x="42" y="82" width="116" height="10" rx="5" fill="#5c2b2b"></rect><rect x="42" y="105" width="86" height="8" rx="4" fill="#4a2222"></rect>
+                            <rect x="42" y="132" width="116" height="60" rx="9" fill="#3b1f1f"></rect>
+                            <path d="M58 172h84m-70-14 22-10 18 6 24-14" fill="none" stroke="#f87171" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+                            <rect x="186" y="78" width="398" height="114" rx="10" fill="#2a1616"></rect>
+                            <text x="210" y="118" fill="#fca5a5" font-family="monospace" font-size="16" data-i18n="preview.ficat.line1">PHP moderno · MariaDB · Linux</text>
+                            <text x="210" y="148" fill="#fecaca" font-family="monospace" font-size="14" data-i18n="preview.ficat.line2">acessibilidade · identidade UFRA</text>
+                            <circle cx="527" cy="68" r="17" fill="#7f1d1d"></circle><path d="m519 68 6 6 11-13" fill="none" stroke="#fecaca" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
                         </svg>
                     </figure>
                     <div class="project-topline">
-                        <span class="project-mark mark-quiz" aria-hidden="true">
-                            <svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-10-2 12"></path></svg>
+                        <span class="project-mark mark-ficat" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M8 8h8M8 12h8M8 16h5"></path></svg>
                         </span>
-                        <span class="project-number">04</span>
-                        <span class="project-type" data-i18n="project.quiz.type">Sistemas</span>
+                        <span class="project-number">06</span>
+                        <span class="project-type" data-i18n="project.ficat.type">Modernização</span>
                     </div>
-                    <h3>Math Quiz Terminal of Doom</h3>
-                    <p class="project-description" data-i18n="project.quiz.description">
-                        Quiz matemático de console em C++ que combina perguntas, vidas e interação com recursos do Windows.
+                    <h3>FICAT UFRA</h3>
+                    <p class="project-description" data-i18n="project.ficat.description">
+                        Modernização de sistema legado em PHP (versões recentes), atualização do MariaDB, redesign acessível com identidade visual da UFRA e deploy em servidor Linux.
                     </p>
                     <ul class="tag-list" aria-label="Tecnologias" data-i18n-aria-label="project.technologies">
-                        <li>C++</li>
-                        <li>Win32 API</li>
-                        <li>Windows</li>
+                        <li><span class="tag-icon" data-tech="php" aria-hidden="true"></span>PHP</li>
+                        <li><span class="tag-icon" data-tech="mariadb" aria-hidden="true"></span>MariaDB</li>
+                        <li><span class="tag-icon" data-tech="linux" aria-hidden="true"></span>Linux</li>
+                        <li data-i18n="tag.accessibility">Acessibilidade</li>
                     </ul>
                     <div class="project-actions">
                         <a class="button button-secondary" href="https://github.com/anfemoraes?tab=repositories" target="_blank" rel="noopener noreferrer">
@@ -283,6 +389,7 @@
                         </button>
                     </div>
                 </article>
+
                 </div>
                 <button class="carousel-arrow" id="next-project" type="button" aria-label="Próximo projeto" data-i18n-aria-label="projects.next">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
@@ -290,7 +397,7 @@
             </div>
             <div class="carousel-footer">
                 <p class="empty-state" id="empty-state" hidden data-i18n="projects.empty">Nenhum projeto encontrado para essa tecnologia.</p>
-                <p class="slide-count" id="slide-count" aria-live="polite">Projeto 1 de 4</p>
+                <p class="slide-count" id="slide-count" aria-live="polite">Projeto 1 de 6</p>
             </div>
         </section>
 
@@ -305,28 +412,28 @@
                 <article class="skill-group">
                     <h3 data-i18n="skills.frontend">Front-end</h3>
                     <ul class="skill-list">
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/javascript.svg" alt=""></span>JavaScript</li>
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/react.svg" alt=""></span>React</li>
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/html5.svg" alt=""></span>HTML</li>
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/css3.svg" alt=""></span>CSS</li>
+                        <li><span class="tech-icon" data-tech="typescript" aria-hidden="true"></span>TypeScript</li>
+                        <li><span class="tech-icon" data-tech="react" aria-hidden="true"></span>React</li>
+                        <li><span class="tech-icon" data-tech="javascript" aria-hidden="true"></span>JavaScript</li>
+                        <li><span class="tech-icon" data-tech="css3" aria-hidden="true"></span>CSS</li>
                     </ul>
                 </article>
                 <article class="skill-group">
                     <h3 data-i18n="skills.backend">Back-end & dados</h3>
                     <ul class="skill-list">
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/nodedotjs.svg" alt=""></span>Node.js</li>
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/php.svg" alt=""></span>PHP</li>
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/postgresql.svg" alt=""></span>PostgreSQL</li>
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/cplusplus.svg" alt=""></span>C++</li>
+                        <li><span class="tech-icon" data-tech="nodedotjs" aria-hidden="true"></span>Node.js</li>
+                        <li><span class="tech-icon" data-tech="python" aria-hidden="true"></span>Python</li>
+                        <li><span class="tech-icon" data-tech="postgresql" aria-hidden="true"></span>PostgreSQL</li>
+                        <li><span class="tech-icon" data-tech="php" aria-hidden="true"></span>PHP</li>
                     </ul>
                 </article>
                 <article class="skill-group">
-                    <h3 data-i18n="skills.cloud">Cloud & ferramentas</h3>
+                    <h3 data-i18n="skills.cloud">Cloud & DevOps</h3>
                     <ul class="skill-list">
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/amazonaws.svg" alt=""></span>AWS</li>
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/microsoftazure.svg" alt=""></span>Azure</li>
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/linux.svg" alt=""></span>Linux</li>
-                        <li><span class="tech-icon" aria-hidden="true"><img src="img/stack/git.svg" alt=""></span>Git</li>
+                        <li><span class="tech-icon" data-tech="amazonaws" aria-hidden="true"></span>AWS</li>
+                        <li><span class="tech-icon" data-tech="docker" aria-hidden="true"></span>Docker</li>
+                        <li><span class="tech-icon" data-tech="linux" aria-hidden="true"></span>Linux</li>
+                        <li><span class="tech-icon" data-tech="git" aria-hidden="true"></span>Git</li>
                     </ul>
                 </article>
             </div>
@@ -336,12 +443,18 @@
             <div>
                 <p class="eyebrow" data-i18n="contact.eyebrow">VAMOS CONVERSAR</p>
                 <h2 id="contact-title" data-i18n="contact.title">Tem um projeto em mente?</h2>
-                <p data-i18n="contact.description">Estou disponível para oportunidades e colaborações.</p>
+                <p data-i18n="contact.description">Estou disponível para oportunidades e colaborações em engenharia de software, cloud e dados.</p>
             </div>
-            <a class="button button-primary" href="mailto:andremoraes2327@gmail.com">
+            <div class="contact-actions">
+                <a class="button button-primary" href="mailto:andremoras2327@gmail.com">
                 <span data-i18n="contact.button">Entrar em contato</span>
                 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13m-5-5 5 5-5 5"></path></svg>
             </a>
+                <a class="button button-secondary" href="cv.pdf" download="CV-Andre-Moraes.pdf">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16"></path></svg>
+                    <span data-i18n="cv.button">Baixar CV</span>
+                </a>
+            </div>
         </section>
     </main>
 
